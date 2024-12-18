@@ -85,7 +85,7 @@ Now, the box plot for the prediction is more centralized at the upper range, wit
 
 The residual plot shows that the model is not a good fit for the data since there is a very clear pattern in the graph. This tells us that the prediction itself is missing key information and features. 
 
-## Model 3 graphs are very similar to Model 2 with only some minute differences
+### Model 3 graphs are very similar to Model 2 with only some minute differences
 
 
 
