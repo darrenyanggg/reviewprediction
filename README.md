@@ -17,7 +17,7 @@ I then used the ‘gcloud’ command to make a new bucket called yelpfrog inside
 
 
 ## Exploratory Data Analysis and Data Cleaning
-### Subsection: Exploratory Data Analysis
+### Exploratory Data Analysis
 From my Exploratory Data Analysis, I looked through all 5 datasets within the Yelp Complete Open Dataset. 
 
 Firstly I found that of the 5 only the business.json had missing values while the other 4 didn’t have any. The business dataset had a total of 150346 observations and had missing values in its attributes, categories, and hours columns. Through summary statistics, I found that in the review_count column, the average number of reviews is approximately 44.87 with a standard deviation of approximately 121.12. The lowest number of reviews is 5 while the highest is 7568. In the stats column, the average star rating was about 3.6 with a standard deviation of 0.97. As expected the lowest star rating is 1.0 and the highest is 5.0. I also found that the address 185E State St appeared the most (minimum isn’t shown as most addresses appear once). For categories, the least popular category is 3D Printing, Local Services, Hobby Shops, and Shopping while the most popular ones are Zoos, Tours, Arts & Entertainment, Hotels & Travel, and Active Life. The most frequented city is Lithia and the least frequent is AB Edmonton. The least popular business is Grow Academy whereas the most popular is called Transformational Abdominal Massage by Jada Delaney. The most popular state is XMS (I have no clue where that is) and the least popular is in AB. Through the use of visualizations, I found that there are much more opened businesses than closed ones. I also found that the distribution of stars, weighted by the number of reviews,  is left-skewed with the peak at around 3.7. There seems to be a gap between 2.6 and 2.9 which may be numbers people typically don’t choose when rating a business. 
@@ -30,7 +30,7 @@ The tip dataset has 908915 observations. The first tip written by a user was on 
 
 Finally, in the user dataset, there are a lot of numeric variables. Only focusing on what’s important, the number of reviews an average user writes is 23.39 with a standard deviation of 82.57 due to the maximum being at 17473 (minimum is 0). A user’s average rating is 3.63 with a standard deviation of 1.18. I also found that the earliest user started on 2004-10-12 at 08:46:11 with the most recent being 2022-01-19 at 17:15:47
 
-### Subsection: Data Cleaning 
+### Data Cleaning 
 For the business dataset, I cleaned it by first filling in the missing values in the categories column with the string “General Business” as the column is important when it comes to categorizing the type of businesses. I then dropped the attributes m, hours, latitude, and longitude columns as they weren’t needed. I also changed the is_open column to a Boolean data type because only 2 possible values are making Boolean ideal. 
 
 For the checkin dataset, I changed the date’s datatype to timestamp; since it was small, that was all I needed to do.
