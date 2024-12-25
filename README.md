@@ -1,4 +1,4 @@
-# darrenyanggg.github.io
+# reviewprediction
 
 ## Proposal 
 The dataset I’m using is Yelp Complete Open Dataset. I used Kaggle to find this dataset and the link is https://www.kaggle.com/datasets/adamamer2001/yelp-complete-open-dataset-2024. In this dataset, 5 JSON files make up the entirety of the dataset.
